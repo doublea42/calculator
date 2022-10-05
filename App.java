@@ -33,10 +33,12 @@ public class App{
         */
 
         /* phase 5 
-        String qst0 = "lets add numbers ";
+       
         System.out.println(qst0);
         // getString(qst0);
 
+        String qst0 = "lets add numbers ";
+        System.out.println(qst0);
         Double num1 = getDouble("enter your first number");
         Double num2 = getDouble("enter second number");
         
@@ -73,6 +75,13 @@ public class App{
         */
 
         System.out.println("Welcome to the app calcluator");
+        Calculator cal = new Calculator();
+
+        String qst0 = "";
+        //System.out.println(qst0);
+        Double num1 = 0.0;
+        Double num2 = 0.0;
+        double result = 0.0;
         
 
         // String qst = null;
@@ -90,6 +99,20 @@ public class App{
 
             if(qst2.equals("x")){
                 qst = false;
+            }
+            else{
+                if(qst2.equals("a")) {
+                    qst0 = "lets add numbers ";
+                    System.out.println(qst0);
+                    num1 = getDouble("enter your first number");
+                    num2 = getDouble("enter second number");
+
+                    result = cal.add(num1, num2);
+                    System.out.println(result);
+
+                    
+
+                }
             }
 
         }
